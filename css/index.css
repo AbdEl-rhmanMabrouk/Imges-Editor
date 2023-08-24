@@ -1,0 +1,94 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* start eddet */
+
+.container {
+    background: #222;
+    width: 90%;
+}
+
+.container .img-box img,
+canvas {
+    max-width: 45vw;
+    max-height: 60vh;
+}
+
+.container .img .up-lode label {
+    border: 3px white dashed;
+    cursor: pointer;
+    filter: grayscale();
+}
+
+.container .img {
+    gap: 50px;
+}
+
+.container .feltar ul,
+.container .feltar ul li {
+    gap: 20px;
+    direction: rtl;
+}
+
+.container .feltar ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .feltar ul li:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .feltar ul li a,
+.container .feltar ul li span {
+    padding: 10px 20px;
+    background: #060;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* end eddet */
+
+@media screen and (max-width:65px) {
+    .container .img-box img,
+    canvas {
+        width: 80vw;
+    }
+}

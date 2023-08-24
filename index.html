@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imges Editor</title>
+    <link rel="icon" href="img/logo.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row ">
+            <div class="col-lg-7 col-sm-6 col-md-12 d-flex justify-content-center align-items-center">
+                <div class="img d-flex flex-column justify-content-center align-items-center">
+                    <div class="img-box" id="img-box">
+                        <img class="img-fluid" id="img">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <div class="up-lode">
+                        <label class="pt-2 pb-2 ps-4 pe-4 text-light" for="upload">up load</label>
+                        <input class="d-none" type="file" name="" id="upload">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-6 col-md-12">
+                <div class="feltar">
+                    <ul class="d-flex flex-column text-end">
+                        <li>
+                            <label class="text-light" for="saturat">saturat</label>
+                            <input type="range" value="100" min="0" max="200" id="saturat">
+                        </li>
+                        <li>
+                            <label class="text-light" for="contrast">contrast</label>
+                            <input type="range" value="100" min="0" max="200" id="contrast">
+                        </li>
+                        <li>
+                            <label class="text-light" for="brightness">brightness</label>
+                            <input type="range" value="100" min="0" max="200" id="brightness">
+                        </li>
+                        <li>
+                            <label class="text-light" for="sepia">sepia</label>
+                            <input type="range" value="0" min="0" max="200" id="sepia">
+                        </li>
+                        <li>
+                            <label class="text-light" for="grayscale">grayscale</label>
+                            <input type="range" value="0" min="0" max="1" step="0.1" id="grayscale">
+                        </li>
+                        <li>
+                            <label class="text-light" for="blur">blur</label>
+                            <input type="range" value="0" min="0" max="10" step="0.1" id="blur">
+                        </li>
+                        <li>
+                            <label class="text-light" for="hur-rotate">hur rotate</label>
+                            <input type="range" value="0" min="0" max="350" id="hur-rotate">
+                        </li>
+                        <li class="">
+                            <a href="" class="text-light" download="BoOoDa✌" id="download">download</a>
+                            <span onclick="resetValiue()" class="text-light" id="rest">rest</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- link JS bootstrap -->
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
